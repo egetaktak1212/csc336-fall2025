@@ -1,0 +1,254 @@
+@font-face {
+    font-family: Prisma;
+    src: url(Prisma.ttf);
+}
+
+@font-face {
+    font-family: Felix;
+    src: url(Felixti.TTF);
+}
+
+@font-face {
+    font-family: Chobani;
+    src: url(Recoleta\ Light.otf);
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #360000;
+    border-radius: 20px;
+    border: 1px solid #000000;
+    padding: 10px;
+    margin-bottom: 30px;
+    width: 300px;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: chobani;
+    background: #221d1d;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: rgb(0, 157, 255)
+}
+
+header {
+    background: rgba(24, 28, 11, 255);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    max-width: 700px;
+    outline: 5px solid rgb(124, 0, 0);
+    height: fit-content;
+}
+
+#pfp {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    border-radius: 20px;
+    margin-left: 40px;
+}
+
+
+#main_title {
+
+    text-align: right;
+    color: white;
+    margin-right: 20px;
+}
+
+.prismatext {
+    font-family: Prisma;
+    font-size: 70px;
+    color: rgb(182, 56, 44);
+
+}
+
+.felixtext {
+    font-family: Felix;
+    font-size: 30px;
+    color: white;
+}
+
+
+
+.innerdesign {
+    font-family: sans-serif;
+    /* background: linear-gradient(to top, #100100, #181818); */
+    background: rgba(19, 17, 18, 255);
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 10px #0000005c;
+
+}
+
+.outerdesign {
+
+    background: linear-gradient(to bottom, #410100, #4f0000);
+
+}
+
+
+#about_me_box {
+    background: #210303;
+    background: linear-gradient(350deg, rgba(33, 3, 3, 1) 10%, rgba(107, 0, 0, 1) 100%);
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    border-radius: 20px;
+    max-width: 800px;
+    outline: 5px solid rgb(124, 0, 0);
+    height: fit-content;
+}
+
+#about_me {
+    font-family: Chobani;
+    font-size: 20px;
+    color: rgb(227, 222, 222)
+}
+
+#about_title {
+    color: rgb(255, 166, 158);
+    margin: 0px;
+
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#artpieces {
+    text-align: left;
+    font-size: 50px;
+    margin-left: 20%;
+
+}
+
+
+.card {
+    position: relative;
+    width: 500px;
+}
+
+.number {
+    position: relative;
+    z-index: 3;
+    background: #b53c00;
+    background: radial-gradient(circle, rgba(181, 60, 0, 1) 0%, rgba(130, 33, 0, 1) 86%);
+    width: 100px;
+    left: 30px;
+    top: -15px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#two {
+    background: #d9d9d9;
+    background: radial-gradient(circle, rgba(217, 217, 217, 1) 0%, rgba(77, 77, 77, 1) 86%);
+
+}
+
+#one {
+    background: #ffea00;
+    background: radial-gradient(circle, rgba(255, 234, 0, 1) 0%, rgba(255, 135, 43, 1) 86%);
+
+}
+
+.picture {
+    position: relative;
+    z-index: 1;
+    background: rgba(24, 28, 11, 255);
+    border-radius: 20px;
+
+    outline: 5px solid rgb(124, 0, 0);
+    height: 400px;
+    width: 400px;
+    top: -90px;
+    left: 13%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.card:hover .picture {
+    opacity: 0.3
+}
+
+.card:hover .hovertext {
+    opacity: 1
+}
+
+.card:hover .pringleimage {
+    opacity: 0.05
+}
+
+.hovertext {
+    position: absolute;
+    z-index: 0;
+    background: rgba(24, 28, 11, 255);
+    border-radius: 20px;
+    outline: 5px solid rgb(124, 0, 0);
+    height: 400px;
+    width: 400px;
+    top: 10px;
+    left: 13%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: chobani;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+#pringletext {
+    font-size: 18px;
+}
+
+#gamesbox {
+    background: rgba(24, 28, 11, 255);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    max-width: 700px;
+    outline: 5px solid rgb(124, 0, 0);
+    height: fit-content;
+    text-align: center;
+}
+
+.gamecard{
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.gamegif {
+    position: relative;
+    z-index: 1;
+    background: rgba(24, 28, 11, 255);
+    border-radius: 20px;
+
+    outline: 5px solid rgb(124, 0, 0);
+    height: 200px;
+    width: 200px;
+    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
