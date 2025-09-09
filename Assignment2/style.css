@@ -252,3 +252,42 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+.gamecard:hover .gamegif {
+    opacity: 0.3
+}
+
+.gamehovertext {
+    position: absolute;
+    z-index: 0;
+    background: rgba(24, 28, 11, 255);
+    border-radius: 20px;
+    outline: 5px solid rgb(124, 0, 0);
+    height: 200px;
+    width: 200px;
+    top: 50px;
+    left: 50px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: chobani;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.gamecard:hover .gamehovertext {
+    opacity: 1
+}
+
+.footer{
+    background: rgba(24, 28, 11, 255);
+    bottom: 0px;
+    max-width: 800px;
+    height: 70px
+
+}
