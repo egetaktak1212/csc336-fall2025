@@ -233,7 +233,7 @@ header {
     text-align: center;
 }
 
-.gamecard{
+.gamecard {
     position: relative;
     width: 300px;
     height: 300px;
@@ -284,7 +284,7 @@ header {
     opacity: 1
 }
 
-.footer{
+.footer {
     background: rgba(24, 28, 11, 255);
     bottom: 0px;
     max-width: 800px;
