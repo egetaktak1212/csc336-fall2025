@@ -1,0 +1,141 @@
+.caveat {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: Chobani;
+    src: url(../Assignment2/Recoleta\ Light.otf);
+}
+
+body {
+    background-image: url("../Assignment3/wallpaper.png");
+
+
+}
+
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture {
+    z-index: 0;
+    height: 270px;
+    width: 270px;
+}
+
+.pin {
+    position: absolute;
+    left: 150px;
+    top: 40px;
+    z-index: 1;
+}
+
+.posttextbox {
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 170px;
+    overflow: auto;
+}
+
+.posttext {
+    font-size: 20px;
+    font-family: "Caveat";
+    align-self: center;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cardadder {
+    background: #C0A35A;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Chobani";
+    border-radius: 20px;
+    border: 5px solid #322D2B;
+}
+
+.buttondiv {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#tableholder {
+    background-image: url(../Assignment3/corkboard.png);
+    width: 1522px;
+    min-height: 914;
+    background-size: cover;
+    background-position: center;
+    border: 50px solid transparent;
+    border-image: url("../Assignment3/woodtex.png") 100 round;
+}
+
+.inputdiv {
+    margin-left: auto;
+    margin-right: auto;
+    width: 270px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+#noteinput {
+    background: #ffd35c;
+    background: linear-gradient(11deg, rgba(255, 211, 92, 1) 0%, rgba(255, 246, 186, 1) 86%);
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    font-size: 30px;
+    min-height: 270px;
+    font-family: "Caveat";
+    border: 5px solid #322D2B;
+}
+
+
+.fontdiv {
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    background: #455B55;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Chobani";
+    border-radius: 20px;
+    border: 5px solid #322D2B;
+}
+
+.fontbutton {
+    background-color: #322D2B;
+    border-radius: 6px;
+    color: wheat;
+}
+
+#fontdown {
+    margin-left: 5px;
+}
