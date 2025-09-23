@@ -1,0 +1,52 @@
+<html class="outerdesign">
+
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+
+<body class="innerdesign">
+    <div class="mainbox">
+        <div id="balancebox" class="center">
+            <p id="balance" class="balance compacta">BALANCE: </p>
+        </div>
+
+        <form id="form" class="card center">
+            <div class="component">
+                <label for="company" class="question">CHOOSE A COMPANY:</label>
+
+                <select name="company" id="company">
+                    <option value="oogle">Oogle</option>
+                    <option value="michael">Michael Soft</option>
+                    <option value="rugs">Rugs and Tugs</option>
+                    <option value="evil">Evil Factory</option>
+                </select> <br><br>
+            </div>
+            <div class="component">
+                <label for="money" class="question">CHOOSE A MONEYS ($):</label>
+
+                <input type="number" id="money" name="money" placeholder="####"> <br><br>
+            </div>
+            <div class="component">
+                <label for="color" class="question">CHOOSE ARBITRARY COLOR:</label>
+
+                <input type="color" id="color" name="color" value="#324E64"> <br><br>
+            </div>
+            <div class="component">
+                <input type="submit" id="submit" value="MAKE INVESTMENT">
+            </div>
+        </form>
+
+        <div id="investlist" class="center">
+
+        </div>
+
+
+    </div>
+</body>
+
+
+</html>
