@@ -1,0 +1,70 @@
+ .center {
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ body {
+     margin: 0;
+     padding: 0;
+     background-color: wheat;
+ }
+
+
+ #header {
+     background-color: rgb(13, 79, 31);
+     width: 100%;
+     height: 200px;
+     position: relative;
+     z-index: 2;
+ }
+
+ #maintitle {
+     color: wheat;
+     font-size: 100px;
+     text-align: center;
+     margin: 0;
+     line-height: 300px;
+ }
+
+ #caption {
+     position: absolute;
+     top: 100px;
+     width: 100%;
+     text-align: center;
+     font-size: 24px;
+     color: #333;
+     z-index: 1;
+ }
+
+ #restofthepage {
+     height: 100%;
+     width: 100%;
+
+ }
+
+ #reviews {
+     margin-top: 100px;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: nowrap;
+     gap: 50px;
+ }
+
+ .review {
+     opacity: 0;
+     position: relative;
+     font-size: 30px;
+     background-color: rgb(13, 79, 31);
+     width: fit-content;
+     padding: 10px;
+     color: white;
+ }
+
+ #bugburger {
+    margin-top: 130px;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 500px;
+
+ }
