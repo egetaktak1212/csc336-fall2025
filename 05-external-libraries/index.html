@@ -1,13 +1,13 @@
 <html>
 
 <head>
-
     <link rel="stylesheet" href="style.css">
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
     <script src="script.js" defer></script>
-
 </head>
+
 
 <body>
     <div id="topofthepage">
@@ -20,22 +20,64 @@
     </div>
     <div id="restofthepage">
 
-        <img src="./bugburger.png" alt="" id="bugburger" class="center">
+        <img src="./bugburger.png" alt="" id="bugburger" class="center" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic" data-aos-duration="2000">
 
 
         <div id="reviews">
-            <div class="review" style="left: 10%;"> "My irreverent daughter refused to eat the bug soup! Henceforth, my
-                son's an only
-                child." - The NY Times </div>
-            <div class="review" style="left: 15%;"> "My irreverent daughter refused to eat the bug soup! Henceforth, my
-                son's an only
-                child." - Jim Henson </div>
-            <div class="review" style="left: 20%;"> "My irreverent daughter refused to eat the bug soup! Henceforth, my
-                son's an only
-                child." - Coen Brothers </div>
+            <div class="review" data-aos="fade-up" style="left: 10%;">
+                "What'll they think of next? Bugs in the drinks? In the air? Maybe even the ground!" - Coen
+                Brothers
+            </div>
+            <div class="review" data-aos="fade-up" data-aos-delay="200" style="left: 15%;">
+                "I'd always wished that every meatball I've ever eaten was actually an Austrian Stag Beetle." - Time Mag
+            </div>
+            <div class="review" data-aos="fade-up" data-aos-delay="400" style="left: 20%;">
+                "My irreverent daughter refused to eat the bug soup! Henceforth, my son's an only child." - Jim Henson
+            </div>
         </div>
-    </div>
-</body>
 
+        <div id="worm">
+            <img src="./wormnoodles.png" alt="" id="wormnoodles" data-aos="fade-left" data-aos-duration="500">
+            <div id="wormtext">
+                <div style="font-size: 70px; font-family: Mc;">$14.99 Pasta</div>
+                <div style="font-size: 40px;">but around 17% of the noodles are actually just worms.<div
+                        style="font-size: 30px;">Real, alive worms.</div>
+                </div>They wait
+                with bated breath for eternal slumber!
+            </div>
+        </div>
+
+        <div id="cent">
+            <div id="centtext">
+                <div style="font-size: 70px; font-family: Mc;">$4.99 Centiwich</div>
+                <div style="font-size: 40px;">How'd that get in there?</div>
+            </div>
+            <img src="./centdog.png" alt="" id="centdog" data-aos="fade-left" data-aos-duration="500">
+        </div>
+
+
+        <div id="dump">
+            <img src="./dumpling.jpg" alt="" id="dumpicture" data-aos="fade-left" data-aos-duration="500">
+            <div id="dumptext">
+                <div style="font-size: 70px; font-family: Mc;">. . .</div>
+                <div style="font-size: 40px;">there's bugs in there...
+                </div>
+            </div>
+        </div>
+
+        <div id="gap">
+
+        </div>
+
+
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                once: true
+            });
+        </script>
+</body>
 
 </html>
