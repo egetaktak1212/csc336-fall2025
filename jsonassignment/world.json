@@ -1,0 +1,52 @@
+{
+    "regions": [
+        {
+            "name": "Marshalls",
+            "climate": "Damp",
+            "towns": [
+                {
+                    "name": "Mens Isle",
+                    "population": 24,
+                    "notable_people": [
+                        {
+                            "name": "Calvin",
+                            "role": "Merchant",
+                            "items": [
+                                {
+                                    "name": "Pants",
+                                    "description": "Rubbish. Who's he think he is peddling this garbage?"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Klein",
+                            "role": "Calvin's sidekick with a lot of deeply rooted resentment and backstory with his partner.",
+                            "items": [
+                                {
+                                    "name": "Weapon",
+                                    "description": "One of many, I'm told. It's itchin to be used."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Baff Rum",
+                    "population": 1,
+                    "notable_people": [
+                        {
+                            "name": "Yuri Knell",
+                            "role": "He collects.",
+                            "items": [
+                                {
+                                    "name": "Bottle",
+                                    "description": "Don't look into this one."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
