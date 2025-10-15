@@ -49,46 +49,46 @@
             ]
         },
         {
-            "name": "",
-            "climate": "",
+            "name": "North Jersey",
+            "climate": "Hellfire",
             "towns": [
                 {
-                    "name": "",
-                    "population": 24,
+                    "name": "9th Circle",
+                    "population": 20000,
                     "notable_people": [
                         {
-                            "name": "",
-                            "role": "",
+                            "name": "Saint Uhn",
+                            "role": "Governor",
                             "items": [
                                 {
-                                    "name": "",
-                                    "description": ""
+                                    "name": "Enticement Letter",
+                                    "description": "Piece of parchment meant to attract weak souls to the gates of North Jersey. The text specifies that Jersey doesn't have sales tax on clothing."
                                 }
                             ]
                         },
                         {
-                            "name": "",
-                            "role": "",
+                            "name": "Andrew Cuomo",
+                            "role": "Asylum Seeker",
                             "items": [
                                 {
-                                    "name": "",
-                                    "description": ""
+                                    "name": "COVID Test",
+                                    "description": "You can visit grandma later! It's just not safe in the city for her right now. We promise, she's going to be taken care of, healthy, and conscious."
                                 }
                             ]
                         }
                     ]
                 },
                 {
-                    "name": "",
-                    "population": 1,
+                    "name": "Hoboken",
+                    "population": 7300,
                     "notable_people": [
                         {
-                            "name": "",
-                            "role": "",
+                            "name": "Insufficient Housing",
+                            "role": "Representative, named after the defining feature of Hoboken",
                             "items": [
                                 {
-                                    "name": "",
-                                    "description": ""
+                                    "name": "Trulia Entry",
+                                    "description": "HOA Fees that end up being MORE than the monthly mortgage payment. How is it that an apartment worth $1300 a month can have an HOA of $2100?? Are they also paying for my insurance? Does it include cosmetic surgery??"
                                 }
                             ]
                         }
