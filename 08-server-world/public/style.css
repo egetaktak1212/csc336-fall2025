@@ -1,0 +1,452 @@
+.center {
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.whitetext {
+    color: white;
+}
+
+@font-face {
+    font-family: 'Compacta';
+    src: url('./Recoleta\ Light.otf') format('truetype');
+}
+
+html {
+    background-color: #000f19;
+
+}
+
+.regioncard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    background-color: rgb(86, 73, 103);
+    width: 1000px;
+    min-height: 500px;
+    border: 5px solid rgb(58, 53, 53);
+    border-radius: 5px;
+}
+
+#regiontitle {
+    font-family: Compacta;
+    position: relative;
+    z-index: 1;
+    background: rgb(42, 38, 78);
+    border-radius: 20px;
+    outline: 5px solid rgb(8, 0, 46);
+    padding: 10px;
+    top: 20px;
+    backface-visibility: hidden;
+    font-size: 70px;
+    text-align: center;
+}
+
+
+#regionimagebox {
+    position: relative;
+    z-index: 1;
+    background: rgb(86, 73, 103);
+    border-radius: 20px;
+    outline: 5px solid rgb(8, 0, 46);
+    height: 400px;
+    width: 700px;
+    top: 50px;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+#townstitle {
+    position: relative;
+    z-index: 1;
+    background: rgb(42, 38, 78);
+    border-radius: 20px;
+    outline: 5px solid rgb(8, 0, 46);
+    padding: 10px;
+    top: 100px;
+    backface-visibility: hidden;
+    font-size: 70px;
+    text-align: center;
+}
+
+#townlist {
+    position: relative;
+    width: 900px;
+    min-height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: rgb(26, 26, 26);
+    margin-top: 120px;
+    padding-bottom: 25px;
+    border-radius: 5px;
+}
+
+#towncard {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    background-color: #1f2c32;
+    width: 850px;
+    height: 300px;
+    border: 5px solid rgb(58, 53, 53);
+    border-radius: 5px;
+}
+
+#townimage {
+    position: absolute;
+    background: rgb(86, 73, 103);
+    border-radius: 20px;
+    outline: 5px solid rgb(8, 0, 46);
+    height: 200px;
+    width: 200px;
+    top: 50px;
+    left: 5%;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+#townname {
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    font-size: 90px;
+    font-family: Cool;
+    color: white;
+    background-color: #181242;
+    padding: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+}
+
+#population {
+    position: absolute;
+    left: 30%;
+    top: 60%;
+    font-size: 40px;
+    font-family: Cool;
+    color: white;
+    background-color: #181242;
+    padding: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+}
+
+#editpeople {
+    position: absolute;
+    left: 80%;
+    top: 30%;
+    height: auto;
+    width: auto;
+    text-align: center;
+    font-size: 40px;
+    font-family: Cool;
+    color: white;
+    background-color: #181242;
+    padding: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+}
+
+#townpopup {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: fixed;
+    top: 20%;
+    right: 37%;
+    background-color: rgb(133, 170, 175);
+    width: 500px;
+    height: 550px;
+    z-index: 9;
+    border-radius: 20px;
+    border: 5px solid rgb(58, 53, 53);
+}
+
+#notabletitle {
+    position: relative;
+    top: 2%;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#notablelist {
+    position: relative;
+    top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #1f2c32;
+    width: 400px;
+    height: 350px;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+
+.notablebutton {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 200px;
+    height: 60;
+    font-size: 30px;
+}
+
+.notablebutton:hover {
+    background-color: #005fa3;
+}
+
+
+#peoplesubmit {
+    position: relative;
+    top: 7%;
+    background-color: #00cc69;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 200px;
+    height: 60;
+    font-size: 30px;
+}
+
+#peoplesubmit:hover {
+    background-color: #009e52;
+}
+
+#itempopup {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: fixed;
+    top: 34%;
+    right: 43%;
+    background-color: rgb(64, 48, 77);
+    width: 260px;
+    height: 260px;
+    z-index: 10;
+    border-radius: 20px;
+    border: 5px solid rgb(58, 53, 53);
+}
+
+#itemstitle {
+    position: relative;
+    top: 2%;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+#iteminput {
+    margin-top: 40px;
+    border: 5px solid rgb(58, 53, 53);
+    padding: 5px;
+    font-size: 20px;
+    width: 70%;
+}
+
+#itemsubmit {
+    position: relative;
+    top: 7%;
+    background-color: #00cc69;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 200px;
+    height: 60;
+    font-size: 30px;
+}
+
+#itemsubmit:hover {
+    background-color: #009e52;
+}
+
+#addingPersonPopup {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: fixed;
+    top: 34%;
+    right: 43%;
+    background-color: rgb(64, 48, 77);
+    width: 260px;
+    height: 260px;
+    z-index: 10;
+    border-radius: 20px;
+    border: 5px solid rgb(58, 53, 53);
+}
+
+#addingpersontitle {
+    position: relative;
+    top: 2%;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+#personnameinput {
+    margin-top: 40px;
+    border: 5px solid rgb(58, 53, 53);
+    padding: 5px;
+    font-size: 20px;
+    width: 70%;
+}
+
+#personnamesubmit {
+    position: relative;
+    top: 7%;
+    background-color: #00cc69;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 200px;
+    height: 60;
+    font-size: 30px;
+}
+
+#itemsubmit:hover {
+    background-color: #009e52;
+}
+
+#townbuttoncard {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2c32;
+    width: 200px;
+    height: 200px;
+    border: 5px solid rgb(58, 53, 53);
+    border-radius: 5px;
+}
+
+#townplusbutton {
+    height: 100px;
+    width: 100px;
+    font-size: 100px;
+    text-align: center;
+    background-color: #005fa3;
+    color: white;
+}
+
+#townplusbutton:hover {
+    background-color: #004679;
+}
+
+
+#addingTownPopup {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: fixed;
+    top: 34%;
+    right: 40%;
+    background-color: rgb(49, 48, 77);
+    width: 350px;
+    height: 450px;
+    z-index: 10;
+    border-radius: 20px;
+    border: 5px solid rgb(58, 53, 53);
+}
+
+#addingTownTitle {
+    position: relative;
+    top: 2%;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+.townNameTitle {
+    position: relative;
+    top: 2%;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+
+#townNameInput {
+    margin-top: 20px;
+    border: 5px solid rgb(31, 0, 0);
+    padding: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#townPopInput {
+    margin-top: 20px;
+    border: 5px solid rgb(31, 0, 0);
+    padding: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#townImgInput {
+    margin-top: 20px;
+    border: 5px solid rgb(31, 0, 0);
+    padding: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#townSubmit {
+    position: relative;
+    top: 7%;
+    background-color: #00cc69;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 200px;
+    height: 60;
+    font-size: 30px;
+}
+
+#townForm {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: fixed;
+
+}
+
+#resetjson {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: white;
+    background-color: #000f19;
+    height: 100px;
+    width: 100px;
+}
