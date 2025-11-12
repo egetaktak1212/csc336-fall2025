@@ -5,8 +5,13 @@ const app = express();
 
 app.use(express.static("./public"));
 app.use(express.json());
+
+const safejson = null;
+
+
 app.get("/world", async (req, res) => {
     const dataString = await fs.readFileSync("world.json", "utf-8");
+    //safejson = await fs.readFileSync("wordsafeduplication.json", "utf-8");
     const dataObject = JSON.parse(dataString);
     res.json(dataObject);
 });
@@ -18,11 +23,18 @@ app.post("/update", async (req, res) => {
     res.json("uhh");
 });
 
-// app.get("/resetJSON", async (req, res) => {
-//     const dataString = await fs.readFileSync("worldsafeduplication.json", "utf-8");
-//     fs.writeFileSync("./world.json", dataString);
-//     res.json("uhh");
+app.get("/resetJSON", async (req, res) => {
+    //const dataString = await fs.readFileSync("worldsafeduplication.json", "utf-8");
+    fs.writeFileSync("./world.json", safejson);
+    res.json("uhh");
+});
+
+// app.get("/test", async (req, res) => {
+//     safejson = await fs.readFileSync("wordsafeduplication.json", "utf-8");
+//     const dataObject = JSON.parse(safejson);
+//     res.json(safejson);
 // });
+
 
 
 

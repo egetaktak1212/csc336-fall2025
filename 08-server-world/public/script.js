@@ -320,14 +320,12 @@ function closeNotablePeople(popup) {
     popup.remove();
 }
 
-async function updateJSON() {
-    
+async function updateJSON() { 
     const res = await fetch("/update", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(regions)
     });
-
 }
 
 // const resetjsonbutton = document.querySelector("#resetjson");
@@ -335,8 +333,11 @@ async function updateJSON() {
 // resetjsonbutton.addEventListener("click", () => resetJSON());
 
 // async function resetJSON() {
-//     const res = await fetch("/resetJSON");
-//     loadWorld();
+//     console.log("A");
+//     const res = await fetch("/test");
+//     console.log("B");
+//     const value = await res.json();
+//     console.log("value");
 // }
 
 
