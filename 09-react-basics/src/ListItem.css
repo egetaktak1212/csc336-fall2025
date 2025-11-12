@@ -1,0 +1,27 @@
+li {
+    background-color: brown;
+    margin-top: 1em;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.imagediv {
+    width: 280px;
+    height: 280px;
+}
+
+.namediv {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style:italic;
+
+}
