@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import "./ApiThing.css"
 
-function ApiThing() {
+function ApiThing({ itemfunction }) {
 
   const [recipe, setRecipe] = useState(null);
 
@@ -76,7 +76,21 @@ function ApiThing() {
         )}
         <ul className="inglist">
           {recipe?.ingredients.map((item, index) => (
-            <li>{item.ingredient} : {item.measure}</li>
+            <li>
+              {item.ingredient} : {item.measure}
+
+              <button className='listadderbutton'
+                onClick={() => itemfunction({
+                  name: item.ingredient,
+                  image: `https://www.themealdb.com/images/ingredients/${item.ingredient.toLowerCase().replace(/ /g, "_")}.png`,
+                  quantity: 1 //i thought about making the quantity match the measure but i dont want to. im tired.
+                })}
+              >
+                Add to List
+              </button>
+
+
+            </li>
           ))}
         </ul>
 
