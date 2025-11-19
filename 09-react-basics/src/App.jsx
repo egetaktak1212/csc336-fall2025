@@ -12,9 +12,9 @@ function App() {
     <>
       <BrowserRouter>
         <nav>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/apithing">API Page</NavLink>
+          <NavLink to="/" className={"navlinks"}>Home</NavLink>
+          <NavLink to="/about" className={"navlinks"}>About</NavLink>
+          <NavLink to="/apithing" className={"navlinks"}>Recipes</NavLink>
         </nav>
         <Routes>
           <Route path="/" element={<Home/>}/>

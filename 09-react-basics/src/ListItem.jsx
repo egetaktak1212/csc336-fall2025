@@ -4,7 +4,7 @@ import Quantity from "./Quantity";
 function ListItem({ name, image, quantity }) {
 
     return (
-        <li>
+        <li className="listitem">
             <div className="imagediv">
                 <img src={image} width={"100%"} height={"100%"}/>
             </div>
