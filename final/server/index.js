@@ -14,4 +14,11 @@ app.get("/api/data", (req, res) =>  {
   });
 });
 
+app.use(express.static("./public"));
+
 app.listen(3000);
+
+
+//review section for the games
+//you make the review in the game page and its viable in a larger section where you can sort reviews by game and allat
+//the api could be like a profile creator where you write your name and pick your fav game

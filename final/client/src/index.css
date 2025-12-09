@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url('./assets/mainbackground.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+}

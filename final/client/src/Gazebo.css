@@ -1,0 +1,59 @@
+.gazebo-full-page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    background-image: url('./assets/mainbackground.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+}
+
+.gazebo-nav-buttons {
+    background-color: #210e44;
+    border-radius: 20px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-family: alagard;
+    font-size: 25px;
+
+}
+
+.gazebo-title {
+    font-family: alagard;
+    font-size: 80px;
+    color: #e8ebff;
+}
+
+.gazebo-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.gazebo-img {
+    max-width: 284px;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    border: 3px solid #210e44;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.gazebo-img:hover {
+    transform: scale(1.05);
+}

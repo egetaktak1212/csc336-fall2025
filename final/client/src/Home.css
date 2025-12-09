@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'alagard';
+    src: url('./assets/fonts/alagard/alagard.ttf');
+}
+
+@font-face {
+    font-family: 'ari';
+    src: url('./assets/fonts/ari_w9500/ari-w9500-bold.ttf');
+}
+
+
+.alagard {
+    font-family: alagard;
+
+}
+
+.ari {
+    font-family: ari;
+}
+
+.gazebo {
+    font-size: 105px;
+    color: #e8ebff;
+}
+
+.emulator {
+    font-size: 100px;
+    color: #e8ebff;
+    line-height: 0.6;
+}
+
+
+.home-cont {
+    margin-top: 25vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.nav-buttons {
+    background-color: #e8ebff;
+    border-radius: 20px;
+    width: 650px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.about-btn {
+    font-size: 18px;
+    color: black;
+}
+
+.consoles-btn {
+    font-size: 33px;
+    color: black;
+}
+
+.reviews-btn {
+    font-size: 18px;
+    color: black;
+}

@@ -1,0 +1,51 @@
+
+.about-cont {
+    height: 100vh;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    background-image: url('./assets/cloudbackground.png');
+    justify-content: flex-start;
+}
+
+.about-text {
+    width: 600px;
+    font-size: 20px;
+}
+
+.about-full-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-nav-buttons {
+    background-color: #210e44;
+    border-radius: 20px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    font-family: alagard;
+    font-size: 25px;
+    
+}
+
+.about {
+    color: #210e44;
+    font-size: 100px;
+}
+
+.about-mission {
+    color: #210e44;
+    font-size: 50px;
+}

@@ -1,0 +1,50 @@
+.consoles-full-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.consoles-nav-buttons {
+    background-color: #210e44;
+    border-radius: 20px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-family: alagard;
+    font-size: 25px;
+    
+}
+
+.consoles-title {
+    font-family: alagard;
+    font-size: 100px;
+    color: #e8ebff;
+    margin-top: 50px;
+}
+
+.console-images {
+    display: flex;
+    gap: 200px;
+    margin-top: 50px;
+}
+
+.console-img {
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.console-img:hover {
+    transform: scale(1.05);
+}

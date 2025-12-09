@@ -1,5 +1,12 @@
 import { useEffect, useState } from "react";
 import './App.css'
+import Reviews from './Reviews.jsx';
+import Home from './Home.jsx';
+import Consoles from './Consoles.jsx';
+import About from './About.jsx';
+import Gazebo from './Gazebo.jsx';
+import Hullabaloo from "./Hullabaloo.jsx";
+import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 
 function App() {
   const [data, setData] = useState({
@@ -7,7 +14,7 @@ function App() {
     items: "12345"
   })
 
-    useEffect(() => {
+  useEffect(() => {
     fetch("/api/data")
       .then((res) => res.json())
       .then((json) => setData(json))
@@ -15,8 +22,17 @@ function App() {
 
 
   return (
-    <>
-    <h1>{data.title}</h1>
+    <>      <BrowserRouter>
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/consoles" element={<Consoles />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/reviews" element={<Reviews />} />
+          <Route path="/thegazebo" element={<Gazebo />}/>
+          <Route path="/hullabaloo" element={<Hullabaloo />}/>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
