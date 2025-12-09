@@ -15,11 +15,6 @@ function App() {
     items: "12345"
   })
 
-  useEffect(() => {
-    fetch("/api/data")
-      .then((res) => res.json())
-      .then((json) => setData(json))
-  }, []);
 
 
   return (

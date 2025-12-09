@@ -1,5 +1,6 @@
 import express from "express"
 import cors from "cors"
+import fs from "fs";
 
 const app = express();
 
@@ -7,18 +8,24 @@ app.use(express.json());
 app.use(cors())
 
 
-app.get("/api/data", (req, res) =>  {
-  res.json({
-    title: "Test Title",
-    items: "12345"
-  });
+app.get("/api/reviews", (req, res) => {
+  try {
+    const reviewsString = fs.readFileSync("./reviews.json", "utf-8");
+    const reviewsObject = JSON.parse(reviewsString);
+    res.json(reviewsObject);
+  } catch (err) {
+    console.error(err);
+  }
+});
+
+app.post("/api/reviews", (req, res) => {
+
+  const updatedReviews = req.body;
+  fs.writeFileSync("./reviews.json", JSON.stringify(updatedReviews));
+  res.json("good");
+
 });
 
 app.use(express.static("./public"));
 
 app.listen(3000);
-
-
-//review section for the games
-//you make the review in the game page and its viable in a larger section where you can sort reviews by game and allat
-//the api could be like a profile creator where you write your name and pick your fav game
